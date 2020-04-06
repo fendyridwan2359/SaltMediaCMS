@@ -174,6 +174,17 @@ public class CustomerEdit {
 		}
 	 }
 	 
+	 public boolean checkEditedCustomer()
+	 {
+		if((new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(tableFirstList)).getText().contains(varEmail)) {
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	 }
+	 
 	public String getTextName()
 	{
 		return (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(name)).getText();

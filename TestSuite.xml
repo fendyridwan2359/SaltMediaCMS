@@ -15,18 +15,18 @@
 	   			
 	    		<class name="TestCases.AppPages">
 	    			<methods>
-	    				<include name="login"/>
-						<include name="B_001_displayOfListPage"/>
+	    				<exclude name="login"/>
+						<exclude name="B_001_displayOfListPage"/>
 						<exclude name="B_002_CreateNewKeyPage"/>
-						<include name="B_003_searchAvailableAppPage"/>
+						<exclude name="B_003_searchAvailableAppPage"/>
 						<exclude name="B_004_editAppPage"/>
 						<exclude name="B_005_deleteAppPage"/>
 	    			</methods>
 	    		</class>
 	    		<class name="TestCases.Playlist">
 	    			<methods>
-	    				<include name="login"/>
-						<include name="C_001_DisplayofPlaylistList"/>
+	    				<exclude name="login"/>
+						<exclude name="C_001_DisplayofPlaylistList"/>
 						<exclude name="C_002_CreateNewSeriesPlaylist"/>
 						<exclude name="C_003_EditSeriesPlaylist"/>
 						<exclude name="C_004_DeleteSeriesPlaylist"/>
@@ -54,6 +54,15 @@
 	    			</methods>
 	    		</class>
 	    		
+	    		<class name="TestCases.Cinemas">
+	    			<methods>
+	    				<exclude name="login"/>
+						<exclude name="F_001_CheckCinemaList"/>
+						<exclude name="F_002_CreateNewCinemas"/>
+						<exclude name="F_003_EditCinemas"/>
+						<exclude name="F_004_DeleteCinemas"/>
+	    			</methods>
+	    		</class>
 	    		<class name="TestCases.AppConfiguration">
 	    			<methods>
 	    				<exclude name="login"/>
@@ -69,6 +78,15 @@
 	    				<exclude name="H_001_CheckPageList"/>
 	    				<exclude name="H_002_CreateNewCustomer"/>
 						<exclude name="H_003_EditCustomer"/>
+	    			</methods>
+	    		</class>
+	    		<class name="TestCases.Package">
+	    			<methods>
+	    				<include name="login"/>
+	    				<exclude name="I_001_DisplayofPackageList"/>
+	    				<exclude name="I_002_CreateNewPackage"/>
+						<include name="I_003_SelectPackageFromList"/>
+						<exclude name="I_004_EditPackage"/>
 	    			</methods>
 	    		</class>
 	    		

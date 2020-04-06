@@ -12,6 +12,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import bases.BaseWeb;
@@ -76,7 +77,15 @@ public class AppPagesEdit extends BaseWeb {
 	@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div[1]/div[2]/div[2]/form/div/div[5]/div/div[1]/button")
 	@CacheLookup
 	WebElement addPlaylistButton;
-
+	
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div[3]/div/div[3]/div[1]/div[1]/div/div/div")
+	@CacheLookup
+	WebElement listBox;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"menu-\"]/div[3]/ul/li[2]")
+	@CacheLookup
+	WebElement ListBoxCMS;
+	
 	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div[3]/div/div[3]/div[2]/table/tbody/tr[1]")
 	@CacheLookup
 	WebElement firstPlaylist;
@@ -88,6 +97,10 @@ public class AppPagesEdit extends BaseWeb {
 	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div[3]/div/div[3]/div[5]/div[2]/button")
 	@CacheLookup
 	WebElement continueButton;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div[1]/div[2]/div[2]/form/div/div[5]/div/div[1]/button[2]")
+	@CacheLookup
+	WebElement savePlaylistButton;
 	
 	@FindBy(how = How.XPATH, using = "//*[contains(text(), 'test Automation Edit')]")
 	@CacheLookup
@@ -170,6 +183,12 @@ public class AppPagesEdit extends BaseWeb {
 		addPlaylistButton.click();
 		Thread.sleep(4000);
 	}
+	
+	public void selectListBox() throws InterruptedException {
+		listBox.click();
+		ListBoxCMS.click();
+		Thread.sleep(2000);
+	}
 
 	public void selectFirstPlaylist() {
 		firstPlaylist.click();
@@ -181,6 +200,11 @@ public class AppPagesEdit extends BaseWeb {
 
 	public void clickContinueButton() throws InterruptedException {
 		continueButton.click();
+	}
+	
+	public void clickSavePlaylist() throws InterruptedException {
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(savePlaylistButton)).click();
+		Thread.sleep(2000);
 	}
 
 	public boolean editedAppPage() throws InterruptedException {

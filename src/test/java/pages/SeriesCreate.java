@@ -90,13 +90,13 @@ public class SeriesCreate {
 	
 	public void uploadThumbnail()
 	{
-		File f = new File("/Users/fendyridwan/Desktop/picture1.png");
+		File f = new File("/usr/local/bin/300x400.jpg");
 		thumbnail.sendKeys(f.getAbsolutePath());
 	}
 	
 	public void uploadPoster()
 	{
-		File f = new File("/Users/fendyridwan/Desktop/picture2.png");
+		File f = new File("/usr/local/bin/1024x720");
 		poster.sendKeys(f.getAbsolutePath());
 	}
 	

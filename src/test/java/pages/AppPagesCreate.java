@@ -82,6 +82,14 @@ public class AppPagesCreate extends BaseWeb {
 	@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div[1]/div[2]/div[2]/form/div/div[4]/div/div[1]/button")
 	@CacheLookup
 	WebElement addPlaylistButton;
+	
+	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div[3]/div/div[3]/div[1]/div[1]/div/div/div")
+	@CacheLookup
+	WebElement listBox;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"menu-\"]/div[3]/ul/li[2]")
+	@CacheLookup
+	WebElement ListBoxCMS;
 
 	@FindBy(how = How.XPATH, using = "/html/body/div[2]/div[3]/div/div[3]/div[2]/table/tbody/tr[1]")
 	@CacheLookup
@@ -159,6 +167,12 @@ public class AppPagesCreate extends BaseWeb {
 
 	public void selectFirstPlaylist() {
 		firstPlaylist.click();
+	}
+	
+	public void selectListBox() throws InterruptedException {
+		listBox.click();
+		ListBoxCMS.click();
+		Thread.sleep(2000);
 	}
 
 	public void clickContinueButton() throws InterruptedException {

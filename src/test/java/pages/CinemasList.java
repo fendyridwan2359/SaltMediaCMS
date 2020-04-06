@@ -15,9 +15,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * @author fendyridwan
  *
  */
-public class CinamasList {
+public class CinemasList {
 	WebDriver driver;
-	public CinamasList(WebDriver driver) {
+	String movieName = "jellies";
+	public CinemasList(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -34,17 +35,14 @@ public class CinamasList {
 	@CacheLookup
 	WebElement searchField;
 	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div[1]/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[3]")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div[1]/div[2]/div[2]/div/div[2]/table/tbody/tr[1]")
 	@CacheLookup
 	WebElement tableFirstList;
 	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div[1]/div[2]/div[2]/div/div[2]/table/tbody/tr/td[2]")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div[1]/div[2]/div[2]/div/div[2]/table/tbody/tr[1]/td[2]")
 	@CacheLookup
 	WebElement getTextFirstTable;
 	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div[1]/div[2]/div[2]/div/div[2]/table/tbody/tr/td[2]")
-	@CacheLookup
-	WebElement getTextNameOfFirstTable;
 	
 	public void clickNavigationBar()
 	{
@@ -56,9 +54,10 @@ public class CinamasList {
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(createNewButton)).click();
 	}
 	
-	public void typeSearch(String varName)
+	public void typeSearch() throws InterruptedException
 	{
-		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(searchField)).sendKeys(varName);;
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(searchField)).sendKeys(movieName);
+		Thread.sleep(2000);
 	}
 	
 	public void clearSearch() throws InterruptedException 
@@ -112,7 +111,7 @@ public class CinamasList {
 	
 	public String getTextNameOfFirstTable()
 	{
-		return (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(getTextNameOfFirstTable)).getText();
+		return (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(getTextFirstTable)).getText();
 	}
 
 }

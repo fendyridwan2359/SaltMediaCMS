@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" parallel="tests" name="Failed suite [MySuite]" guice-stage="DEVELOPMENT">
-  <parameter name="headless" value="true"/>
+  <parameter name="headless" value="false"/>
   <parameter name="browser" value="chrome"/>
   <test thread-count="1" parallel="tests" name="Regresion test for 1.5.35(failed)">
     <classes>
-      <class name="TestCases.AppPages">
+      <class name="TestCases.Package">
         <methods>
           <include name="setBaseConfig"/>
           <include name="settupTestingData"/>
-          <include name="B_003_searchAvailableAppPage"/>
           <include name="quitDriver"/>
+          <include name="I_003_SelectPackageFromList"/>
           <include name="deleteScreenShot"/>
         </methods>
-      </class> <!-- TestCases.AppPages -->
+      </class> <!-- TestCases.Package -->
     </classes>
   </test> <!-- Regresion test for 1.5.35(failed) -->
 </suite> <!-- Failed suite [MySuite] -->

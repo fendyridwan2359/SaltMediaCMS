@@ -61,6 +61,7 @@ public class AppPages extends BaseWeb {
 		addPage.typeFriendlyId(addPage.friendlyId()); 
 		scrollDown();
 		addPage.clickAddPlaylistButton(); 
+		addPage.selectListBox();
 		addPage.selectFirstPlaylist();
 		scrollDown(); 
 		addPage.clickContinueButton(); 
@@ -76,7 +77,7 @@ public class AppPages extends BaseWeb {
 		
 	}
 	
-	@Test//(dependsOnMethods = { "B_002_CreateNewKeyPage" })
+	//@Test(dependsOnMethods = { "B_002_CreateNewKeyPage" })
 	public void B_003_searchAvailableAppPage() throws InterruptedException
 	{
 		AppPageList appPage = PageFactory.initElements(driver, AppPageList.class);
@@ -88,7 +89,7 @@ public class AppPages extends BaseWeb {
 		Assert.assertTrue(appPage.addedAppPage(), "search failed");
 	}
 	
-	@Test//(dependsOnMethods = { "B_003_searchAvailableAppPage" })
+	@Test//(dependsOnMethods = { "B_002_CreateNewKeyPage" })
 	public void B_004_editAppPage() throws InterruptedException
 	{
 		AppPageList appPage = PageFactory.initElements(driver, AppPageList.class);
@@ -111,9 +112,11 @@ public class AppPages extends BaseWeb {
 		scrollDown();
 		editPage.clickAddPlaylistButton();
 		//editPage.addPlaylistButtonElement().click();
+		editPage.selectListBox();
 		editPage.selectSecondPlaylist(); 
 		scrollDown();
-		editPage.clickContinueButton(); 
+		editPage.clickContinueButton();
+		editPage.clickSavePlaylist();
 		scrollUp(); 
 		editPage.clickSaveButton();
 		Thread.sleep(3000);
@@ -126,7 +129,7 @@ public class AppPages extends BaseWeb {
 		
 	}
 	
-	@Test(dependsOnMethods = { "B_004_editAppPage" })
+	@Test//(dependsOnMethods = { "B_004_editAppPage" })
 	public void B_005_deleteAppPage() throws InterruptedException
 	{
 		AppPagesEdit appPage = PageFactory.initElements(driver, AppPagesEdit.class);

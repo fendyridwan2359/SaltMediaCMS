@@ -87,9 +87,10 @@ public class Customer extends BaseWeb {
 		Thread.sleep(1000);
 		ce.clickNavigationBar();
 		Thread.sleep(2000);
+		ce.typeSearch();
 		
 		
-		//Assert.assertTrue(cc.checkAddedCustomer(), "New customer not found");
+		Assert.assertTrue(ce.checkAddedCustomer(), "New customer not found");
 	}
 
 }

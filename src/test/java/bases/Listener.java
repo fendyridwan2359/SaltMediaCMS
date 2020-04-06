@@ -94,31 +94,41 @@ public class Listener implements ITestListener {
 				XSSFRow row = sheet.getRow(countRow);
 				
 				getCaseNameonExcel = row.getCell(1).toString();
-				
+				/*System.out.println(countRow+" = "+getCaseNameonExcel);
+				if(countRow==34) {
+					System.out.println("masuk");
+				}*/
 				if(getCaseNameonExcel.length()<4||getCaseNameonExcel.isEmpty()||getCaseNameonExcel.equals(""))
 				{
-					row.createCell(testResult).setCellValue("-");
+					row.getCell(testResult).setCellValue("-");
+					
 					aa = "-kosong-";
 				}else
 				if(passResultFromContext.contains(getCaseNameonExcel)) 
 				{
-					row.createCell(testResult).setCellValue("PASS");
+					row.getCell(testResult).setCellValue("PASS");
+					row.getCell(7).setCellValue("-");
 					aa = "PASS";
 				}
-				else if(failResultFromContext.contains(getCaseNameonExcel)) 
+				else 
+				if(failResultFromContext.contains(getCaseNameonExcel)) 
 				{
-					row.createCell(testResult).setCellValue("Failed");
-					row.createCell(7).setCellValue("http://3.1.15.19/view/SaltMedia/job/SaltMediaCMS1/ws/screenshot/"+getCaseNameonExcel+".jpg");
+					row.getCell(testResult).setCellValue("FAIL");
+					//row.createCell(7).setCellValue("http://3.1.15.19/view/SaltMedia/job/SaltMediaCMS1/ws/screenshot/"+getCaseNameonExcel+".jpg");
+					row.getCell(7).setCellValue("http://3.1.15.19/view/SaltMedia/job/SaltMediaCMS1/ws/screenshot/"+getCaseNameonExcel+".jpg");
 					//row.createCell(8).setCellValue(context.getFailedButWithinSuccessPercentageTests().toString());
 					aa = "Fail";
 				}
-				else if(skipResultFromContext.contains(getCaseNameonExcel)) 
+				else 
+				if(skipResultFromContext.contains(getCaseNameonExcel)) 
 				{
-					row.createCell(testResult).setCellValue("skip");
+					row.getCell(testResult).setCellValue("skip");
+					row.getCell(7).setCellValue("-");
 					aa = "Skip";
 				}
 				else {
-					row.createCell(testResult).setCellValue("-");
+					row.getCell(testResult).setCellValue("-");
+					row.getCell(7).setCellValue("-");
 					aa = "-";
 				}
 				

@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.Playlist">
+      <class name="TestCases.Package">
         <methods>
-          <include name="C_004_DeleteSeriesPlaylist"/>
+          <include name="I_001_DisplayofPackageList"/>
+          <include name="I_002_CreateNewPackage"/>
           <include name="setBaseConfig"/>
           <include name="settupTestingData"/>
           <include name="quitDriver"/>
-          <include name="C_002_CreateNewSeriesPlaylist"/>
+          <include name="I_003_SelectPackageFromList"/>
           <include name="deleteScreenShot"/>
-          <include name="C_001_DisplayofPlaylistList"/>
+          <include name="I_004_EditPackage"/>
           <include name="login"/>
-          <include name="C_003_EditSeriesPlaylist"/>
         </methods>
-      </class> <!-- TestCases.Playlist -->
+      </class> <!-- TestCases.Package -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
