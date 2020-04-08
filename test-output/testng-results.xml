@@ -1,105 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="22" total="61" passed="39" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-08T12:32:09 WIB" name="MySuite" finished-at="2020-04-08T12:37:13 WIB" duration-ms="303751">
+  <suite started-at="2020-04-08T16:05:47 WIB" name="MySuite" finished-at="2020-04-08T16:06:01 WIB" duration-ms="13838">
     <groups>
     </groups>
-    <test started-at="2020-04-08T12:32:09 WIB" name="Regresion test for 1.5.35" finished-at="2020-04-08T12:37:13 WIB" duration-ms="303751">
-      <class name="TestCases.Package">
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.Package@2f8dad04]" started-at="2020-04-08T12:36:37 WIB" name="setBaseConfig" finished-at="2020-04-08T12:36:39 WIB" duration-ms="2665" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBaseConfig -->
-        <test-method signature="login()[pri:0, instance:TestCases.Package@2f8dad04]" started-at="2020-04-08T12:36:39 WIB" name="login" finished-at="2020-04-08T12:36:45 WIB" duration-ms="5433" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="I_001_DisplayofPackageList()[pri:0, instance:TestCases.Package@2f8dad04]" started-at="2020-04-08T12:36:45 WIB" name="I_001_DisplayofPackageList" finished-at="2020-04-08T12:36:47 WIB" duration-ms="2150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- I_001_DisplayofPackageList -->
-        <test-method signature="I_002_CreateNewPackage()[pri:0, instance:TestCases.Package@2f8dad04]" started-at="2020-04-08T12:36:47 WIB" name="I_002_CreateNewPackage" finished-at="2020-04-08T12:37:04 WIB" duration-ms="16812" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- I_002_CreateNewPackage -->
-        <test-method signature="I_003_SelectPackageFromList()[pri:0, instance:TestCases.Package@2f8dad04]" started-at="2020-04-08T12:37:04 WIB" name="I_003_SelectPackageFromList" finished-at="2020-04-08T12:37:08 WIB" duration-ms="4277" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- I_003_SelectPackageFromList -->
-        <test-method signature="I_004_EditPackage()[pri:0, instance:TestCases.Package@2f8dad04]" started-at="2020-04-08T12:37:08 WIB" name="I_004_EditPackage" finished-at="2020-04-08T12:37:13 WIB" duration-ms="4828" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- I_004_EditPackage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.Package@2f8dad04]" started-at="2020-04-08T12:37:13 WIB" name="quitDriver" finished-at="2020-04-08T12:37:13 WIB" duration-ms="91" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- TestCases.Package -->
-      <class name="TestCases.AppPages">
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.AppPages@72cde7cc]" started-at="2020-04-08T12:32:28 WIB" name="setBaseConfig" finished-at="2020-04-08T12:32:31 WIB" duration-ms="2782" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBaseConfig -->
-        <test-method signature="login()[pri:0, instance:TestCases.AppPages@72cde7cc]" started-at="2020-04-08T12:32:31 WIB" name="login" finished-at="2020-04-08T12:32:36 WIB" duration-ms="5435" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="B_001_displayOfListPage()[pri:0, instance:TestCases.AppPages@72cde7cc]" started-at="2020-04-08T12:32:36 WIB" name="B_001_displayOfListPage" finished-at="2020-04-08T12:32:39 WIB" duration-ms="2184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- B_001_displayOfListPage -->
-        <test-method signature="B_002_CreateNewKeyPage()[pri:0, instance:TestCases.AppPages@72cde7cc]" started-at="2020-04-08T12:32:39 WIB" name="B_002_CreateNewKeyPage" finished-at="2020-04-08T12:33:02 WIB" duration-ms="23597" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- B_002_CreateNewKeyPage -->
-        <test-method signature="B_004_editAppPage()[pri:0, instance:TestCases.AppPages@72cde7cc]" started-at="2020-04-08T12:33:02 WIB" name="B_004_editAppPage" finished-at="2020-04-08T12:33:34 WIB" duration-ms="32135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- B_004_editAppPage -->
-        <test-method signature="B_005_deleteAppPage()[pri:0, instance:TestCases.AppPages@72cde7cc]" started-at="2020-04-08T12:33:34 WIB" name="B_005_deleteAppPage" finished-at="2020-04-08T12:33:49 WIB" duration-ms="14510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- B_005_deleteAppPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.AppPages@72cde7cc]" started-at="2020-04-08T12:33:49 WIB" name="quitDriver" finished-at="2020-04-08T12:33:49 WIB" duration-ms="81" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- TestCases.AppPages -->
+    <test started-at="2020-04-08T16:05:47 WIB" name="Regresion test for 1.5.35" finished-at="2020-04-08T16:06:01 WIB" duration-ms="13838">
       <class name="TestCases.AuthenticationUserSignIn">
-        <test-method is-config="true" signature="deleteScreenShot()[pri:0, instance:TestCases.AuthenticationUserSignIn@1eb5174b]" started-at="2020-04-08T12:32:09 WIB" name="deleteScreenShot" finished-at="2020-04-08T12:32:09 WIB" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="deleteScreenShot()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:47 WIB" name="deleteScreenShot" finished-at="2020-04-08T16:05:47 WIB" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteScreenShot -->
-        <test-method is-config="true" signature="settupTestingData()[pri:0, instance:TestCases.AuthenticationUserSignIn@1eb5174b]" started-at="2020-04-08T12:32:09 WIB" name="settupTestingData" finished-at="2020-04-08T12:32:09 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="settupTestingData()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:47 WIB" name="settupTestingData" finished-at="2020-04-08T16:05:47 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settupTestingData -->
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.AuthenticationUserSignIn@1eb5174b]" started-at="2020-04-08T12:32:09 WIB" name="setBaseConfig" finished-at="2020-04-08T12:32:19 WIB" duration-ms="9400" status="PASS">
+        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:47 WIB" name="setBaseConfig" finished-at="2020-04-08T16:05:51 WIB" duration-ms="4095" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,237 +31,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseConfig -->
-        <test-method signature="A_001_LoginwithValidCredential()[pri:0, instance:TestCases.AuthenticationUserSignIn@1eb5174b]" started-at="2020-04-08T12:32:19 WIB" name="A_001_LoginwithValidCredential" finished-at="2020-04-08T12:32:21 WIB" duration-ms="2560" status="PASS">
+        <test-method signature="A_001_LoginwithValidCredential()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:51 WIB" name="A_001_LoginwithValidCredential" finished-at="2020-04-08T16:05:54 WIB" duration-ms="2570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- A_001_LoginwithValidCredential -->
-        <test-method signature="A_002_LoginwithInvalidEmail()[pri:0, instance:TestCases.AuthenticationUserSignIn@1eb5174b]" started-at="2020-04-08T12:32:21 WIB" name="A_002_LoginwithInvalidEmail" finished-at="2020-04-08T12:32:26 WIB" duration-ms="4505" status="PASS">
+        <test-method signature="A_002_LoginwithInvalidEmail()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:54 WIB" name="A_002_LoginwithInvalidEmail" finished-at="2020-04-08T16:05:58 WIB" duration-ms="4507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- A_002_LoginwithInvalidEmail -->
-        <test-method signature="A_003_LoginwithInvalidPassword()[pri:0, instance:TestCases.AuthenticationUserSignIn@1eb5174b]" started-at="2020-04-08T12:32:26 WIB" name="A_003_LoginwithInvalidPassword" finished-at="2020-04-08T12:32:28 WIB" duration-ms="2365" status="PASS">
+        <test-method signature="A_003_LoginwithInvalidPassword()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:58 WIB" name="A_003_LoginwithInvalidPassword" finished-at="2020-04-08T16:06:01 WIB" duration-ms="2524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- A_003_LoginwithInvalidPassword -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.AuthenticationUserSignIn@1eb5174b]" started-at="2020-04-08T12:32:28 WIB" name="quitDriver" finished-at="2020-04-08T12:32:28 WIB" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:06:01 WIB" name="quitDriver" finished-at="2020-04-08T16:06:01 WIB" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- TestCases.AuthenticationUserSignIn -->
-      <class name="TestCases.Playlist">
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.Playlist@5fd4f8f5]" started-at="2020-04-08T12:33:49 WIB" name="setBaseConfig" finished-at="2020-04-08T12:33:58 WIB" duration-ms="9256" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBaseConfig -->
-        <test-method signature="login()[pri:0, instance:TestCases.Playlist@5fd4f8f5]" started-at="2020-04-08T12:33:58 WIB" name="login" finished-at="2020-04-08T12:34:04 WIB" duration-ms="5495" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="C_001_DisplayofPlaylistList()[pri:0, instance:TestCases.Playlist@5fd4f8f5]" started-at="2020-04-08T12:34:04 WIB" name="C_001_DisplayofPlaylistList" finished-at="2020-04-08T12:34:08 WIB" duration-ms="4183" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C_001_DisplayofPlaylistList -->
-        <test-method signature="C_002_CreateNewSeriesPlaylist()[pri:0, instance:TestCases.Playlist@5fd4f8f5]" started-at="2020-04-08T12:34:08 WIB" name="C_002_CreateNewSeriesPlaylist" finished-at="2020-04-08T12:34:13 WIB" duration-ms="4903" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C_002_CreateNewSeriesPlaylist -->
-        <test-method signature="C_003_EditSeriesPlaylist()[pri:0, instance:TestCases.Playlist@5fd4f8f5]" started-at="2020-04-08T12:34:13 WIB" name="C_003_EditSeriesPlaylist" finished-at="2020-04-08T12:34:18 WIB" duration-ms="5184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C_003_EditSeriesPlaylist -->
-        <test-method signature="C_004_DeleteSeriesPlaylist()[pri:0, instance:TestCases.Playlist@5fd4f8f5]" started-at="2020-04-08T12:34:18 WIB" name="C_004_DeleteSeriesPlaylist" finished-at="2020-04-08T12:34:25 WIB" duration-ms="7379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C_004_DeleteSeriesPlaylist -->
-        <test-method signature="C_005_CreateNewMoviesPlaylist()[pri:0, instance:TestCases.Playlist@5fd4f8f5]" started-at="2020-04-08T12:34:25 WIB" name="C_005_CreateNewMoviesPlaylist" finished-at="2020-04-08T12:34:31 WIB" duration-ms="5731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C_005_CreateNewMoviesPlaylist -->
-        <test-method signature="C_006_EditMoviesPlaylist()[pri:0, instance:TestCases.Playlist@5fd4f8f5]" started-at="2020-04-08T12:34:31 WIB" name="C_006_EditMoviesPlaylist" finished-at="2020-04-08T12:34:37 WIB" duration-ms="5736" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C_006_EditMoviesPlaylist -->
-        <test-method signature="C_007_DeleteMoviesPlaylist()[pri:0, instance:TestCases.Playlist@5fd4f8f5]" started-at="2020-04-08T12:34:37 WIB" name="C_007_DeleteMoviesPlaylist" finished-at="2020-04-08T12:34:44 WIB" duration-ms="7015" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C_007_DeleteMoviesPlaylist -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.Playlist@5fd4f8f5]" started-at="2020-04-08T12:34:44 WIB" name="quitDriver" finished-at="2020-04-08T12:34:44 WIB" duration-ms="178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- TestCases.Playlist -->
-      <class name="TestCases.Series">
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.Series@696da30b]" started-at="2020-04-08T12:34:44 WIB" name="setBaseConfig" finished-at="2020-04-08T12:34:47 WIB" duration-ms="2456" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBaseConfig -->
-        <test-method signature="login()[pri:0, instance:TestCases.Series@696da30b]" started-at="2020-04-08T12:34:47 WIB" name="login" finished-at="2020-04-08T12:34:52 WIB" duration-ms="5590" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="D_001_DisplayofPlaylistList()[pri:0, instance:TestCases.Series@696da30b]" started-at="2020-04-08T12:34:52 WIB" name="D_001_DisplayofPlaylistList" finished-at="2020-04-08T12:34:54 WIB" duration-ms="2275" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- D_001_DisplayofPlaylistList -->
-        <test-method signature="D_002_CreateNewSeries()[pri:0, instance:TestCases.Series@696da30b]" started-at="2020-04-08T12:34:54 WIB" name="D_002_CreateNewSeries" finished-at="2020-04-08T12:34:59 WIB" duration-ms="4635" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- D_002_CreateNewSeries -->
-        <test-method signature="D_003_EditSeries()[pri:0, instance:TestCases.Series@696da30b]" started-at="2020-04-08T12:34:59 WIB" name="D_003_EditSeries" finished-at="2020-04-08T12:35:06 WIB" duration-ms="6576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- D_003_EditSeries -->
-        <test-method signature="D_004_DeleteSeries()[pri:0, instance:TestCases.Series@696da30b]" started-at="2020-04-08T12:35:06 WIB" name="D_004_DeleteSeries" finished-at="2020-04-08T12:35:13 WIB" duration-ms="6957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- D_004_DeleteSeries -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.Series@696da30b]" started-at="2020-04-08T12:35:13 WIB" name="quitDriver" finished-at="2020-04-08T12:35:13 WIB" duration-ms="84" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- TestCases.Series -->
-      <class name="TestCases.Cinemas">
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.Cinemas@4e7912d8]" started-at="2020-04-08T12:35:13 WIB" name="setBaseConfig" finished-at="2020-04-08T12:35:15 WIB" duration-ms="2394" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBaseConfig -->
-        <test-method signature="login()[pri:0, instance:TestCases.Cinemas@4e7912d8]" started-at="2020-04-08T12:35:15 WIB" name="login" finished-at="2020-04-08T12:35:20 WIB" duration-ms="5442" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="F_001_CheckCinemaList()[pri:0, instance:TestCases.Cinemas@4e7912d8]" started-at="2020-04-08T12:35:20 WIB" name="F_001_CheckCinemaList" finished-at="2020-04-08T12:35:23 WIB" duration-ms="2233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F_001_CheckCinemaList -->
-        <test-method signature="F_002_CreateNewCinemas()[pri:0, instance:TestCases.Cinemas@4e7912d8]" started-at="2020-04-08T12:35:23 WIB" name="F_002_CreateNewCinemas" finished-at="2020-04-08T12:35:33 WIB" duration-ms="10767" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F_002_CreateNewCinemas -->
-        <test-method signature="F_003_EditCinemas()[pri:0, instance:TestCases.Cinemas@4e7912d8]" started-at="2020-04-08T12:35:33 WIB" name="F_003_EditCinemas" finished-at="2020-04-08T12:35:45 WIB" duration-ms="11492" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F_003_EditCinemas -->
-        <test-method signature="F_004_DeleteCinemas()[pri:0, instance:TestCases.Cinemas@4e7912d8]" started-at="2020-04-08T12:35:45 WIB" name="F_004_DeleteCinemas" finished-at="2020-04-08T12:35:53 WIB" duration-ms="8040" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- F_004_DeleteCinemas -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.Cinemas@4e7912d8]" started-at="2020-04-08T12:35:53 WIB" name="quitDriver" finished-at="2020-04-08T12:35:53 WIB" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- TestCases.Cinemas -->
-      <class name="TestCases.AppConfiguration">
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.AppConfiguration@53976f5c]" started-at="2020-04-08T12:35:53 WIB" name="setBaseConfig" finished-at="2020-04-08T12:35:56 WIB" duration-ms="2921" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBaseConfig -->
-        <test-method signature="login()[pri:0, instance:TestCases.AppConfiguration@53976f5c]" started-at="2020-04-08T12:35:56 WIB" name="login" finished-at="2020-04-08T12:36:01 WIB" duration-ms="5414" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="G_001_DisplayofPlaylistList()[pri:0, instance:TestCases.AppConfiguration@53976f5c]" started-at="2020-04-08T12:36:01 WIB" name="G_001_DisplayofPlaylistList" finished-at="2020-04-08T12:36:04 WIB" duration-ms="2750" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- G_001_DisplayofPlaylistList -->
-        <test-method signature="G_002_CreateNewAppConfiguration()[pri:0, instance:TestCases.AppConfiguration@53976f5c]" started-at="2020-04-08T12:36:04 WIB" name="G_002_CreateNewAppConfiguration" finished-at="2020-04-08T12:36:09 WIB" duration-ms="4933" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- G_002_CreateNewAppConfiguration -->
-        <test-method signature="G_002_EditppConfiguration()[pri:0, instance:TestCases.AppConfiguration@53976f5c]" started-at="2020-04-08T12:36:09 WIB" name="G_002_EditppConfiguration" finished-at="2020-04-08T12:36:13 WIB" duration-ms="3888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- G_002_EditppConfiguration -->
-        <test-method signature="G_003_DeleteAppConfiguration()[pri:0, instance:TestCases.AppConfiguration@53976f5c]" started-at="2020-04-08T12:36:13 WIB" name="G_003_DeleteAppConfiguration" finished-at="2020-04-08T12:36:17 WIB" duration-ms="4178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- G_003_DeleteAppConfiguration -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.AppConfiguration@53976f5c]" started-at="2020-04-08T12:36:17 WIB" name="quitDriver" finished-at="2020-04-08T12:36:17 WIB" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- TestCases.AppConfiguration -->
-      <class name="TestCases.Customer">
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.Customer@2bfc268b]" started-at="2020-04-08T12:36:17 WIB" name="setBaseConfig" finished-at="2020-04-08T12:36:19 WIB" duration-ms="1899" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBaseConfig -->
-        <test-method signature="login()[pri:0, instance:TestCases.Customer@2bfc268b]" started-at="2020-04-08T12:36:19 WIB" name="login" finished-at="2020-04-08T12:36:25 WIB" duration-ms="5410" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="H_001_CheckPageList()[pri:0, instance:TestCases.Customer@2bfc268b]" started-at="2020-04-08T12:36:25 WIB" name="H_001_CheckPageList" finished-at="2020-04-08T12:36:27 WIB" duration-ms="2235" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- H_001_CheckPageList -->
-        <test-method signature="H_003_EditCustomer()[pri:0, instance:TestCases.Customer@2bfc268b]" started-at="2020-04-08T12:36:27 WIB" name="H_003_EditCustomer" finished-at="2020-04-08T12:36:37 WIB" duration-ms="9834" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- H_003_EditCustomer -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.Customer@2bfc268b]" started-at="2020-04-08T12:36:37 WIB" name="quitDriver" finished-at="2020-04-08T12:36:37 WIB" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- TestCases.Customer -->
     </test> <!-- Regresion test for 1.5.35 -->
   </suite> <!-- MySuite -->
 </testng-results>

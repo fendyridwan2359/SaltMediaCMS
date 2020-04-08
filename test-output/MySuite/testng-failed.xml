@@ -5,35 +5,16 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="1" parallel="tests" name="Regresion test for 1.5.35(failed)">
     <classes>
-      <class name="TestCases.Customer">
+      <class name="TestCases.AuthenticationUserSignIn">
         <methods>
-          <include name="setBaseConfig"/>
-          <include name="settupTestingData"/>
-          <include name="H_003_EditCustomer"/>
-          <include name="quitDriver"/>
-          <include name="deleteScreenShot"/>
-        </methods>
-      </class> <!-- TestCases.Customer -->
-      <class name="TestCases.Playlist">
-        <methods>
-          <include name="C_004_DeleteSeriesPlaylist"/>
+          <include name="A_001_LoginwithValidCredential"/>
           <include name="setBaseConfig"/>
           <include name="settupTestingData"/>
           <include name="quitDriver"/>
           <include name="deleteScreenShot"/>
-          <include name="C_007_DeleteMoviesPlaylist"/>
+          <include name="A_002_LoginwithInvalidEmail"/>
         </methods>
-      </class> <!-- TestCases.Playlist -->
-      <class name="TestCases.Series">
-        <methods>
-          <include name="D_003_EditSeries"/>
-          <include name="setBaseConfig"/>
-          <include name="settupTestingData"/>
-          <include name="quitDriver"/>
-          <include name="deleteScreenShot"/>
-          <include name="D_004_DeleteSeries"/>
-        </methods>
-      </class> <!-- TestCases.Series -->
+      </class> <!-- TestCases.AuthenticationUserSignIn -->
     </classes>
   </test> <!-- Regresion test for 1.5.35(failed) -->
 </suite> <!-- Failed suite [MySuite] -->
