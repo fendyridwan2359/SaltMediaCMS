@@ -65,7 +65,7 @@ public class AppConfigurationEdit {
 	@CacheLookup
 	WebElement value;
 	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div[1]/div[2]/div[2]/form/div/div[2]/div/div[2]/div/div[3]/div/div/input")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div[1]/div[2]/div[2]/form/div/div[2]/div/div[2]/div/div[3]/div/div/textarea[1]")
 	@CacheLookup
 	WebElement description;
 	

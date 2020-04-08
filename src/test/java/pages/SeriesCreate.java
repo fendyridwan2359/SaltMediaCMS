@@ -96,7 +96,7 @@ public class SeriesCreate {
 	
 	public void uploadPoster()
 	{
-		File f = new File("/usr/local/bin/1024x720");
+		File f = new File("/usr/local/bin/1024x720.jpg");
 		poster.sendKeys(f.getAbsolutePath());
 	}
 	

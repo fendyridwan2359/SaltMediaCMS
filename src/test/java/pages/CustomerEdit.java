@@ -95,9 +95,9 @@ public class CustomerEdit {
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(createNewButton)).click();
 	}
 	
-	public void typeSearch()
+	public void typeSearch(String search)
 	{
-		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(searchField)).sendKeys(varName);;
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(searchField)).sendKeys(search);;
 	}
 	
 	public void clearSearch() throws InterruptedException 
@@ -165,7 +165,7 @@ public class CustomerEdit {
 	 
 	 public boolean checkAddedCustomer()
 	 {
-		if((new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(tableFirstList)).getText().contains(varEmail)) {
+		if((new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(tableFirstList)).getText().contains("testautomation")) {
 			return true;
 		}
 		else

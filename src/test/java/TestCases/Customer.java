@@ -86,11 +86,12 @@ public class Customer extends BaseWeb {
 		ce.clickSaveButton();
 		Thread.sleep(1000);
 		ce.clickNavigationBar();
+		Thread.sleep(1000);
+		ce.typeSearch("testautomation");
 		Thread.sleep(2000);
-		ce.typeSearch();
 		
 		
-		Assert.assertTrue(ce.checkAddedCustomer(), "New customer not found");
+		Assert.assertTrue(ce.checkAddedCustomer(), "customer not found");
 	}
 
 }

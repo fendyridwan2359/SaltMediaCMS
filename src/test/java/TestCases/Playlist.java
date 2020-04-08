@@ -39,7 +39,7 @@ public class Playlist extends BaseWeb {
 	}
 	
 	@Test
-	public void C_002_CreateNewSeriesPlaylist()
+	public void C_002_CreateNewSeriesPlaylist() throws InterruptedException
 	{
 		PlaylistList pl = PageFactory.initElements(driver, PlaylistList.class);
 		PlaylistCreate cn = PageFactory.initElements(driver, PlaylistCreate.class);
@@ -59,8 +59,8 @@ public class Playlist extends BaseWeb {
 		
 	}
 	
-	@Test(dependsOnMethods = { "C_002_CreateNewSeriesPlaylist" })
-	public void C_003_EditSeriesPlaylist()
+	@Test//(dependsOnMethods = { "C_002_CreateNewSeriesPlaylist" })
+	public void C_003_EditSeriesPlaylist() throws InterruptedException
 	{
 		PlaylistList pl = PageFactory.initElements(driver, PlaylistList.class);
 		PlaylistEdit ed = PageFactory.initElements(driver, PlaylistEdit.class);
@@ -82,10 +82,9 @@ public class Playlist extends BaseWeb {
 		
 		Assert.assertTrue(ed.checkEditedPlaylist(), "cannot find edited playlist");
 		
-		
 	}
 	
-	@Test(dependsOnMethods = { "C_003_EditSeriesPlaylist" })
+	@Test//(dependsOnMethods = { "C_003_EditSeriesPlaylist" })
 	public void C_004_DeleteSeriesPlaylist() throws InterruptedException
 	{
 		PlaylistList pl = PageFactory.initElements(driver, PlaylistList.class);
@@ -107,8 +106,8 @@ public class Playlist extends BaseWeb {
 		
 	}
 	
-	@Test(dependsOnMethods = { "C_004_DeleteSeriesPlaylist" })
-	public void C_005_CreateNewMoviesPlaylist()
+	@Test//(dependsOnMethods = { "C_004_DeleteSeriesPlaylist" })
+	public void C_005_CreateNewMoviesPlaylist() throws InterruptedException
 	{
 		PlaylistList pl = PageFactory.initElements(driver, PlaylistList.class);
 		PlaylistCreate cn = PageFactory.initElements(driver, PlaylistCreate.class);
@@ -128,8 +127,8 @@ public class Playlist extends BaseWeb {
 		
 	}
 	
-	@Test(dependsOnMethods = { "C_005_CreateNewMoviesPlaylist" })
-	public void C_006_EditMoviesPlaylist()
+	@Test//(dependsOnMethods = { "C_005_CreateNewMoviesPlaylist" })
+	public void C_006_EditMoviesPlaylist() throws InterruptedException
 	{
 		PlaylistList pl = PageFactory.initElements(driver, PlaylistList.class);
 		PlaylistEdit ed = PageFactory.initElements(driver, PlaylistEdit.class);
@@ -154,7 +153,7 @@ public class Playlist extends BaseWeb {
 		
 	}
 	
-	@Test(dependsOnMethods = { "C_006_EditMoviesPlaylist" })
+	@Test//(dependsOnMethods = { "C_006_EditMoviesPlaylist" })
 	public void C_007_DeleteMoviesPlaylist() throws InterruptedException
 	{
 		PlaylistList pl = PageFactory.initElements(driver, PlaylistList.class);

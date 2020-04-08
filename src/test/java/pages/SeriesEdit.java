@@ -113,14 +113,14 @@ public class SeriesEdit {
 	
 	public void uploadThumbnail()
 	{
-		File f = new File("/Users/fendyridwan/Desktop/picEdit1.png");
+		File f = new File("/usr/local/bin/300x400.jpg");
 		//(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(thumbnail)).sendKeys(f.getAbsolutePath());
 		thumbnail.sendKeys(f.getAbsolutePath());
 	}
 	
 	public void uploadPoster()
 	{
-		File f = new File("/Users/fendyridwan/Desktop/picEdit2.png");
+		File f = new File("/usr/local/bin/1024x720.jpg");
 		//(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(poster)).sendKeys(f.getAbsolutePath());
 		poster.sendKeys(f.getAbsolutePath());
 	}

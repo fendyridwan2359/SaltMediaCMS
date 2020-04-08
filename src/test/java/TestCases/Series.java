@@ -73,6 +73,7 @@ public class Series extends BaseWeb {
 		SeriesEdit se = PageFactory.initElements(driver, SeriesEdit.class);
 		
 		sl.clickNavigationBar();
+		sl.clearSearchField();
 		sl.typeSearch();
 		sl.selectFirstTableList();
 		Thread.sleep(2000);
@@ -106,6 +107,7 @@ public class Series extends BaseWeb {
 		SeriesEdit se = PageFactory.initElements(driver, SeriesEdit.class);
 		
 		sl.clickNavigationBar();
+		sl.clearSearchField();
 		sl.typeSearch();
 		sl.selectFirstTableList();
 		Thread.sleep(2000);

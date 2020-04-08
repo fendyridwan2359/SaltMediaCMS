@@ -59,9 +59,10 @@ public class PlaylistList {
 	
 	
 	
-	public void clickNavigationBar()
+	public void clickNavigationBar() throws InterruptedException
 	{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(navigationBar)).click();
+		Thread.sleep(2000);
 	}
 	
 	public void typeSearchField(String type)

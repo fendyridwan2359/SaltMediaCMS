@@ -150,13 +150,8 @@ public class EventCreate {
 	{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(startDate)).click();
 		
-		String expectMonthAndYear = "";
-		while(expectMonthAndYear.contains("February 2020"))
-		{
-			(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(prevMonthButton)).click();
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(prevMonthButton)).click();
 			
-			expectMonthAndYear = (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(getYearAndMonth)).getText();
-		}
 		System.out.println("month and year = "+(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(getYearAndMonth)).getText());
 		
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(pickStartDate)).click();
@@ -168,13 +163,8 @@ public class EventCreate {
 	{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(endDate)).sendKeys(varEndDate);
 		
-		String expectMonthAndYear = "";
-		while(!expectMonthAndYear.contains("May 2020"))
-		{
-			(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(nextMonthButton)).click();
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(nextMonthButton)).click();
 			
-			expectMonthAndYear = (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(getYearAndMonth2)).getText();
-		}
 		System.out.println("month and year = "+(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(getYearAndMonth2)).getText());
 		
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(pickStartDate2)).click();
