@@ -5,16 +5,15 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="1" parallel="tests" name="Regresion test for 1.5.35(failed)">
     <classes>
-      <class name="TestCases.AuthenticationUserSignIn">
+      <class name="TestCases.Voucher">
         <methods>
-          <include name="A_001_LoginwithValidCredential"/>
           <include name="setBaseConfig"/>
           <include name="settupTestingData"/>
           <include name="quitDriver"/>
+          <include name="J_002_CreateVoucherManual"/>
           <include name="deleteScreenShot"/>
-          <include name="A_002_LoginwithInvalidEmail"/>
         </methods>
-      </class> <!-- TestCases.AuthenticationUserSignIn -->
+      </class> <!-- TestCases.Voucher -->
     </classes>
   </test> <!-- Regresion test for 1.5.35(failed) -->
 </suite> <!-- Failed suite [MySuite] -->

@@ -29,6 +29,7 @@ public class BaseWeb{
 	public static String validAdmin;
 	public static String validPassword;
 	public static String url;
+	public static String urlApp;
 	WebDriverWait wait;
 	
 	@BeforeSuite
@@ -58,7 +59,7 @@ public class BaseWeb{
 	public void setBaseConfig(String browser, String headless) 
 	{
 		url = "http://salt-media-cms-dev.s3-website-ap-southeast-1.amazonaws.com";
-
+		urlApp = "https://dcqghcs98yoco.cloudfront.net/";
 		WebDriver driver = BrowserFactory.startBrowser(browser, url, headless);
 		BaseWeb.driver = driver;
 
@@ -91,7 +92,7 @@ public class BaseWeb{
 	public void scrollDown()
 	{
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		jse.executeScript("window.scrollBy(0,1000)");
+		jse.executeScript("window.scrollBy(0,500)");
 	}
 	
 	public void scrollUp()

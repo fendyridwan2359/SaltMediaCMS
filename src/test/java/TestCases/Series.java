@@ -58,10 +58,11 @@ public class Series extends BaseWeb {
 		scrollUp();
 		sc.clickSaveButton();
 		//back to list page
-		sl.clearSearchField();
-		sl.typeSearch();
+		SeriesList sl2 = PageFactory.initElements(driver, SeriesList.class);
+		sl2.clearSearchField();
+		sl2.typeSearch();
 		
-		Assert.assertTrue(sl.addedSeriesResult(), "new series is not added");
+		Assert.assertTrue(sl2.addedSeriesResult(), "new series is not added");
 		
 		
 	}

@@ -33,6 +33,8 @@ public class BrowserFactory
 			{
 				ChromeOptions option = new ChromeOptions();
 				option.addArguments("--headless");
+				//option.addArguments("--start-maximized");
+				option.addArguments("window-size=1920,1080");
 				driver = new ChromeDriver(option);
 			}
 			else
@@ -48,7 +50,7 @@ public class BrowserFactory
 		}
 		
 		driver.manage().window().maximize();
-		
+
 		driver.get(url);
 		
 		return driver;

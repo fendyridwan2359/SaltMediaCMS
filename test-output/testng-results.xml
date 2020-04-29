@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="69" total="71" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-08T16:05:47 WIB" name="MySuite" finished-at="2020-04-08T16:06:01 WIB" duration-ms="13838">
+  <suite started-at="2020-04-15T15:03:58 WIB" name="MySuite" finished-at="2020-04-15T15:04:33 WIB" duration-ms="35806">
     <groups>
     </groups>
-    <test started-at="2020-04-08T16:05:47 WIB" name="Regresion test for 1.5.35" finished-at="2020-04-08T16:06:01 WIB" duration-ms="13838">
+    <test started-at="2020-04-15T15:03:58 WIB" name="Regresion test for 1.5.35" finished-at="2020-04-15T15:04:33 WIB" duration-ms="35806">
       <class name="TestCases.AuthenticationUserSignIn">
-        <test-method is-config="true" signature="deleteScreenShot()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:47 WIB" name="deleteScreenShot" finished-at="2020-04-08T16:05:47 WIB" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="deleteScreenShot()[pri:0, instance:TestCases.AuthenticationUserSignIn@2f8dad04]" started-at="2020-04-15T15:03:57 WIB" name="deleteScreenShot" finished-at="2020-04-15T15:03:57 WIB" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteScreenShot -->
-        <test-method is-config="true" signature="settupTestingData()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:47 WIB" name="settupTestingData" finished-at="2020-04-08T16:05:47 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="settupTestingData()[pri:0, instance:TestCases.AuthenticationUserSignIn@2f8dad04]" started-at="2020-04-15T15:03:57 WIB" name="settupTestingData" finished-at="2020-04-15T15:03:57 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settupTestingData -->
-        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:47 WIB" name="setBaseConfig" finished-at="2020-04-08T16:05:51 WIB" duration-ms="4095" status="PASS">
+      </class> <!-- TestCases.AuthenticationUserSignIn -->
+      <class name="TestCases.Voucher">
+        <test-method is-config="true" signature="setBaseConfig(java.lang.String, java.lang.String)[pri:0, instance:TestCases.Voucher@41e1e210]" started-at="2020-04-15T15:03:58 WIB" name="setBaseConfig" finished-at="2020-04-15T15:04:04 WIB" duration-ms="6352" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,23 +33,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBaseConfig -->
-        <test-method signature="A_001_LoginwithValidCredential()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:51 WIB" name="A_001_LoginwithValidCredential" finished-at="2020-04-08T16:05:54 WIB" duration-ms="2570" status="PASS">
+        <test-method signature="login()[pri:0, instance:TestCases.Voucher@41e1e210]" started-at="2020-04-15T15:04:04 WIB" name="login" finished-at="2020-04-15T15:04:09 WIB" duration-ms="5546" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A_001_LoginwithValidCredential -->
-        <test-method signature="A_002_LoginwithInvalidEmail()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:54 WIB" name="A_002_LoginwithInvalidEmail" finished-at="2020-04-08T16:05:58 WIB" duration-ms="4507" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="J_002_CreateVoucherManual()[pri:0, instance:TestCases.Voucher@41e1e210]" started-at="2020-04-15T15:04:09 WIB" name="J_002_CreateVoucherManual" finished-at="2020-04-15T15:04:33 WIB" duration-ms="23774" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A_002_LoginwithInvalidEmail -->
-        <test-method signature="A_003_LoginwithInvalidPassword()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:05:58 WIB" name="A_003_LoginwithInvalidPassword" finished-at="2020-04-08T16:06:01 WIB" duration-ms="2524" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- A_003_LoginwithInvalidPassword -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.AuthenticationUserSignIn@482bce4f]" started-at="2020-04-08T16:06:01 WIB" name="quitDriver" finished-at="2020-04-08T16:06:01 WIB" duration-ms="95" status="PASS">
+        </test-method> <!-- J_002_CreateVoucherManual -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestCases.Voucher@41e1e210]" started-at="2020-04-15T15:04:33 WIB" name="quitDriver" finished-at="2020-04-15T15:04:33 WIB" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- TestCases.AuthenticationUserSignIn -->
+      </class> <!-- TestCases.Voucher -->
     </test> <!-- Regresion test for 1.5.35 -->
   </suite> <!-- MySuite -->
 </testng-results>

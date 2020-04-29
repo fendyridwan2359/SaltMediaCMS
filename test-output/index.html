@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,12 @@
                     <div class="method-list-content passed suite-MySuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="TestCases.AuthenticationUserSignIn" class="method navigator-link" hash-for-method="A_001_LoginwithValidCredential">A_001_LoginwithValidCredential</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MySuite" title="TestCases.Voucher" class="method navigator-link" hash-for-method="J_002_CreateVoucherManual">J_002_CreateVoucherManual</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="TestCases.AuthenticationUserSignIn" class="method navigator-link" hash-for-method="A_002_LoginwithInvalidEmail">A_002_LoginwithInvalidEmail</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="TestCases.AuthenticationUserSignIn" class="method navigator-link" hash-for-method="A_003_LoginwithInvalidPassword">A_003_LoginwithInvalidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MySuite" title="TestCases.Voucher" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MySuite -->
@@ -130,28 +125,21 @@
           <div class="suite-MySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.AuthenticationUserSignIn</span>
+              <span class="class-name">TestCases.Voucher</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="A_001_LoginwithValidCredential">
-                  </a> <!-- A_001_LoginwithValidCredential -->
-                  <span class="method-name">A_001_LoginwithValidCredential</span>
+                  <a name="J_002_CreateVoucherManual">
+                  </a> <!-- J_002_CreateVoucherManual -->
+                  <span class="method-name">J_002_CreateVoucherManual</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="A_002_LoginwithInvalidEmail">
-                  </a> <!-- A_002_LoginwithInvalidEmail -->
-                  <span class="method-name">A_002_LoginwithInvalidEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="A_003_LoginwithInvalidPassword">
-                  </a> <!-- A_003_LoginwithInvalidPassword -->
-                  <span class="method-name">A_003_LoginwithInvalidPassword</span>
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,11 +160,98 @@
     &lt;classes&gt;
       &lt;class name=&quot;TestCases.AuthenticationUserSignIn&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;A_001_LoginwithValidCredential&quot;/&gt;
-          &lt;include name=&quot;A_002_LoginwithInvalidEmail&quot;/&gt;
-          &lt;include name=&quot;A_003_LoginwithInvalidPassword&quot;/&gt;
+          &lt;exclude name=&quot;A_001_LoginwithValidCredential&quot;/&gt;
+          &lt;exclude name=&quot;A_002_LoginwithInvalidEmail&quot;/&gt;
+          &lt;exclude name=&quot;A_003_LoginwithInvalidPassword&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.AuthenticationUserSignIn --&gt;
+      &lt;class name=&quot;TestCases.AppPages&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;login&quot;/&gt;
+          &lt;exclude name=&quot;B_001_displayOfListPage&quot;/&gt;
+          &lt;exclude name=&quot;B_002_CreateNewKeyPage&quot;/&gt;
+          &lt;exclude name=&quot;B_003_searchAvailableAppPage&quot;/&gt;
+          &lt;exclude name=&quot;B_004_editAppPage&quot;/&gt;
+          &lt;exclude name=&quot;B_005_deleteAppPage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.AppPages --&gt;
+      &lt;class name=&quot;TestCases.Playlist&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;login&quot;/&gt;
+          &lt;exclude name=&quot;C_001_DisplayofPlaylistList&quot;/&gt;
+          &lt;exclude name=&quot;C_002_CreateNewSeriesPlaylist&quot;/&gt;
+          &lt;exclude name=&quot;C_003_EditSeriesPlaylist&quot;/&gt;
+          &lt;exclude name=&quot;C_004_DeleteSeriesPlaylist&quot;/&gt;
+          &lt;exclude name=&quot;C_005_CreateNewMoviesPlaylist&quot;/&gt;
+          &lt;exclude name=&quot;C_006_EditMoviesPlaylist&quot;/&gt;
+          &lt;exclude name=&quot;C_007_DeleteMoviesPlaylist&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.Playlist --&gt;
+      &lt;class name=&quot;TestCases.Series&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;login&quot;/&gt;
+          &lt;exclude name=&quot;D_001_DisplayofPlaylistList&quot;/&gt;
+          &lt;exclude name=&quot;D_002_CreateNewSeries&quot;/&gt;
+          &lt;exclude name=&quot;D_003_EditSeries&quot;/&gt;
+          &lt;exclude name=&quot;D_004_DeleteSeries&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.Series --&gt;
+      &lt;class name=&quot;TestCases.Events&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;login&quot;/&gt;
+          &lt;exclude name=&quot;E_001_CheckEventList&quot;/&gt;
+          &lt;exclude name=&quot;E_002_CreateNew&quot;/&gt;
+          &lt;exclude name=&quot;E_003_EditEvent&quot;/&gt;
+          &lt;exclude name=&quot;E_004_DeleteEvent&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.Events --&gt;
+      &lt;class name=&quot;TestCases.Cinemas&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;login&quot;/&gt;
+          &lt;exclude name=&quot;F_001_CheckCinemaList&quot;/&gt;
+          &lt;exclude name=&quot;F_002_CreateNewCinemas&quot;/&gt;
+          &lt;exclude name=&quot;F_003_EditCinemas&quot;/&gt;
+          &lt;exclude name=&quot;F_004_DeleteCinemas&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.Cinemas --&gt;
+      &lt;class name=&quot;TestCases.AppConfiguration&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;login&quot;/&gt;
+          &lt;exclude name=&quot;G_001_DisplayofPlaylistList&quot;/&gt;
+          &lt;exclude name=&quot;G_002_CreateNewAppConfiguration&quot;/&gt;
+          &lt;exclude name=&quot;G_002_EditppConfiguration&quot;/&gt;
+          &lt;exclude name=&quot;G_003_DeleteAppConfiguration&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.AppConfiguration --&gt;
+      &lt;class name=&quot;TestCases.Customer&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;login&quot;/&gt;
+          &lt;exclude name=&quot;H_001_CheckPageList&quot;/&gt;
+          &lt;exclude name=&quot;H_002_CreateNewCustomer&quot;/&gt;
+          &lt;exclude name=&quot;H_003_EditCustomer&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.Customer --&gt;
+      &lt;class name=&quot;TestCases.Package&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;login&quot;/&gt;
+          &lt;exclude name=&quot;I_001_DisplayofPackageList&quot;/&gt;
+          &lt;exclude name=&quot;I_002_CreateNewPackage&quot;/&gt;
+          &lt;exclude name=&quot;I_003_SelectPackageFromList&quot;/&gt;
+          &lt;exclude name=&quot;I_004_EditPackage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.Package --&gt;
+      &lt;class name=&quot;TestCases.Voucher&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;J_002_CreateVoucherManual&quot;/&gt;
+          &lt;exclude name=&quot;J_001_DisplayofPlaylistList&quot;/&gt;
+          &lt;exclude name=&quot;J_003_CreateVoucherAutomatically&quot;/&gt;
+          &lt;exclude name=&quot;J_004_EditVoucherName&quot;/&gt;
+          &lt;exclude name=&quot;J_005_EditVoucherToAddVoucherCodeManually&quot;/&gt;
+          &lt;exclude name=&quot;J_006_EditVoucherToAddVoucherCodeAutomatically&quot;/&gt;
+          &lt;exclude name=&quot;J_007_RedeemVoucher&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.Voucher --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regresion test for 1.5.35 --&gt;
 &lt;/suite&gt; &lt;!-- MySuite --&gt;
@@ -190,7 +265,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regresion test for 1.5.35 (1 class)</span>
+                <span class="test-name">Regresion test for 1.5.35 (10 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,24 +291,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'A_002_LoginwithInvalidEmail')
-data.setCell(0, 2, 'TestCases.AuthenticationUserSignIn')
-data.setCell(0, 3, 4507);
+data.setCell(0, 1, 'J_002_CreateVoucherManual')
+data.setCell(0, 2, 'TestCases.Voucher')
+data.setCell(0, 3, 23774);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'A_001_LoginwithValidCredential')
-data.setCell(1, 2, 'TestCases.AuthenticationUserSignIn')
-data.setCell(1, 3, 2570);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'A_003_LoginwithInvalidPassword')
-data.setCell(2, 2, 'TestCases.AuthenticationUserSignIn')
-data.setCell(2, 3, 2524);
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'TestCases.Voucher')
+data.setCell(1, 3, 5546);
 window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-MySuite">
               </div> <!-- times-div-MySuite -->
             </div> <!-- times-div -->
@@ -248,9 +319,197 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-MySuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">69 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.AppPages</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">B_004_editAppPage</span>
+                <br/>
+                <span class="ignored-method-name">settupTestingData</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">B_005_deleteAppPage</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">B_002_CreateNewKeyPage</span>
+                <br/>
+                <span class="ignored-method-name">B_001_displayOfListPage</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Voucher</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">J_003_CreateVoucherAutomatically</span>
+                <br/>
+                <span class="ignored-method-name">settupTestingData</span>
+                <br/>
+                <span class="ignored-method-name">J_006_EditVoucherToAddVoucherCodeAutomatically</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">J_004_EditVoucherName</span>
+                <br/>
+                <span class="ignored-method-name">J_005_EditVoucherToAddVoucherCodeManually</span>
+                <br/>
+                <span class="ignored-method-name">J_001_DisplayofPlaylistList</span>
+                <br/>
+                <span class="ignored-method-name">J_007_RedeemVoucher</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.AppConfiguration</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">G_002_EditppConfiguration</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">settupTestingData</span>
+                <br/>
+                <span class="ignored-method-name">G_001_DisplayofPlaylistList</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">G_003_DeleteAppConfiguration</span>
+                <br/>
+                <span class="ignored-method-name">G_002_CreateNewAppConfiguration</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Cinemas</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">F_003_EditCinemas</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">F_004_DeleteCinemas</span>
+                <br/>
+                <span class="ignored-method-name">settupTestingData</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">F_002_CreateNewCinemas</span>
+                <br/>
+                <span class="ignored-method-name">F_001_CheckCinemaList</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Series</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">D_002_CreateNewSeries</span>
+                <br/>
+                <span class="ignored-method-name">D_003_EditSeries</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">settupTestingData</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">D_004_DeleteSeries</span>
+                <br/>
+                <span class="ignored-method-name">D_001_DisplayofPlaylistList</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Package</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">I_001_DisplayofPackageList</span>
+                <br/>
+                <span class="ignored-method-name">I_002_CreateNewPackage</span>
+                <br/>
+                <span class="ignored-method-name">settupTestingData</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">I_003_SelectPackageFromList</span>
+                <br/>
+                <span class="ignored-method-name">I_004_EditPackage</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Events</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">E_002_CreateNew</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">E_003_EditEvent</span>
+                <br/>
+                <span class="ignored-method-name">E_004_DeleteEvent</span>
+                <br/>
+                <span class="ignored-method-name">settupTestingData</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">E_001_CheckEventList</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.AuthenticationUserSignIn</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">A_003_LoginwithInvalidPassword</span>
+                <br/>
+                <span class="ignored-method-name">A_001_LoginwithValidCredential</span>
+                <br/>
+                <span class="ignored-method-name">A_002_LoginwithInvalidEmail</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Customer</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">H_002_CreateNewCustomer</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">settupTestingData</span>
+                <br/>
+                <span class="ignored-method-name">H_003_EditCustomer</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">H_001_CheckPageList</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.Playlist</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">C_004_DeleteSeriesPlaylist</span>
+                <br/>
+                <span class="ignored-method-name">C_005_CreateNewMoviesPlaylist</span>
+                <br/>
+                <span class="ignored-method-name">settupTestingData</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">C_002_CreateNewSeriesPlaylist</span>
+                <br/>
+                <span class="ignored-method-name">C_007_DeleteMoviesPlaylist</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">C_001_DisplayofPlaylistList</span>
+                <br/>
+                <span class="ignored-method-name">C_003_EditSeriesPlaylist</span>
+                <br/>
+                <span class="ignored-method-name">C_006_EditMoviesPlaylist</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-MySuite" class="panel">
@@ -266,27 +525,26 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">settupTestingData</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.Voucher</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setBaseConfig(chrome, true)</span>
-                <span class="method-start">55 ms</span>
+                <span class="method-start">41 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">A_001_LoginwithValidCredential</span>
-                <span class="method-start">4164 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">6407 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">A_002_LoginwithInvalidEmail</span>
-                <span class="method-start">6738 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">A_003_LoginwithInvalidPassword</span>
-                <span class="method-start">11247 ms</span>
+                <span class="method-name">J_002_CreateVoucherManual</span>
+                <span class="method-start">11957 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">13773 ms</span>
+                <span class="method-start">35734 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

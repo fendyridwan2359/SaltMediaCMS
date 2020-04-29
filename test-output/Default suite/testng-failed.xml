@@ -3,19 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.Package">
+      <class name="TestCases.Voucher">
         <methods>
-          <include name="I_001_DisplayofPackageList"/>
-          <include name="I_002_CreateNewPackage"/>
-          <include name="setBaseConfig"/>
-          <include name="settupTestingData"/>
-          <include name="quitDriver"/>
-          <include name="I_003_SelectPackageFromList"/>
-          <include name="deleteScreenShot"/>
-          <include name="I_004_EditPackage"/>
           <include name="login"/>
+          <include name="setBaseConfig"/>
+          <include name="J_003_CreateVoucherAutomatically"/>
+          <include name="settupTestingData"/>
+          <include name="J_006_EditVoucherToAddVoucherCodeAutomatically"/>
+          <include name="quitDriver"/>
+          <include name="J_002_CreateVoucherManual"/>
+          <include name="deleteScreenShot"/>
+          <include name="J_004_EditVoucherName"/>
+          <include name="J_005_EditVoucherToAddVoucherCodeManually"/>
+          <include name="J_001_DisplayofPlaylistList"/>
+          <include name="J_007_RedeemVoucher"/>
         </methods>
-      </class> <!-- TestCases.Package -->
+      </class> <!-- TestCases.Voucher -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
